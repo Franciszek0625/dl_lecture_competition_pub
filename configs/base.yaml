@@ -5,8 +5,8 @@ data_loader:
   common:
     num_voxel_bins: 15
   train:
-    batch_size: 16
-    shuffle: false
+    batch_size: 8
+    shuffle: true
   test:
     batch_size: 1
     shuffle: false
