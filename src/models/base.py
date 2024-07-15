@@ -58,7 +58,7 @@ class upsample_conv2d_and_predict_flow(nn.Module):
         
         return torch.cat([conv,flow.clone()], dim=1), flow
 
-def general_conv2d(in_channels,out_channels, ksize=1, strides=2, padding=0, do_batch_norm=False, activation='relu'):
+def general_conv2d(in_channels,out_channels, ksize=3, strides=2, padding=1, do_batch_norm=False, activation='relu'):
     """
     a general convolution layer which includes a conv2d, a relu and a batch_normalize
     """
